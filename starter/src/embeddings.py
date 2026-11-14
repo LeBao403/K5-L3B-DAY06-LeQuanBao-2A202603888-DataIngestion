@@ -1,29 +1,29 @@
-"""Choose a real embedding provider (API or local) and implement this contract."""
-from typing import Protocol
-
-
-class Embedder(Protocol):
-    model_name: str
-    dimensions: int
-
-    def embed_documents(self, texts: list[str]) -> list[list[float]]:
-        """Return one vector per input text, in the same order."""
-        ...
-
-    def embed_query(self, question: str) -> list[float]:
-        """Return a query vector compatible with the stored document vectors."""
-        ...
+"""Embeddings utilities using Sentence-Transformers (Offline, Fast, Reliable)."""
+from typing import List
+import numpy as np
+from sentence_transformers import SentenceTransformer
 
 
 class MyEmbedder:
-    """TODO: implement a provider adapter; do not silently fall back to mock vectors."""
+    """Offline local embedder using all-MiniLM-L6-v2 (384 dimensions)."""
 
-    def __init__(self, model_name: str) -> None:
-        self.model_name = model_name
-        raise NotImplementedError("TODO: initialize real embedder and dimensions")
+    def __init__(self, model_name: str = "sentence-transformers/all-MiniLM-L6-v2") -> None:
+        print("   Loading local embedding model (all-MiniLM-L6-v2)...", flush=True)
+        self.model = SentenceTransformer(model_name)
+        self.dim = self.model.get_sentence_embedding_dimension()  # 384
 
-    def embed_documents(self, texts: list[str]) -> list[list[float]]:
-        raise NotImplementedError("TODO: embed_documents")
+    def embed_documents(self, texts: List[str]) -> np.ndarray:
+        """Embed a list of texts locally in batches on CPU."""
+        if not texts:
+            return np.empty((0, self.dim), dtype=np.float32)
+        # batch_size 64 on CPU is extremely fast and light on RAM
+        return self.model.encode(
+            texts,
+            batch_size=64,
+            show_progress_bar=True,
+            convert_to_numpy=True,
+        )
 
-    def embed_query(self, question: str) -> list[float]:
-        raise NotImplementedError("TODO: embed_query")
+    def embed_query(self, query: str) -> np.ndarray:
+        """Embed a single query string -> 1-D vector."""
+        return self.model.encode(query, convert_to_numpy=True)

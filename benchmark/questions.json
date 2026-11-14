@@ -1,0 +1,242 @@
+﻿[
+    {
+        "gold_source_id":  "worldbank_commodity_outlook_oct2026",
+        "split":  "dev",
+        "question":  "What is the projected price of copper in 2027?",
+        "expected_answer":  ",500 per tonne",
+        "filter":  {
+
+                   },
+        "evidence_quote":  "Copper price is expected to reach ,500 per tonne by 2027.",
+        "id":  "q01",
+        "gold_page":  12
+    },
+    {
+        "gold_source_id":  "worldbank_commodity_outlook_oct2026",
+        "split":  "dev",
+        "question":  "Which commodity showed the highest price increase in Q3 2026?",
+        "expected_answer":  "Nickel",
+        "filter":  {
+                       "region":  "Asia"
+                   },
+        "evidence_quote":  "Nickel recorded the highest price increase in Q3 2026.",
+        "id":  "q02",
+        "gold_page":  24
+    },
+    {
+        "gold_source_id":  "worldbank_commodity_outlook_oct2026",
+        "split":  "dev",
+        "question":  "How many megatonnes of iron ore did global production reach in 2025?",
+        "expected_answer":  "1,800 Mt",
+        "filter":  {
+
+                   },
+        "evidence_quote":  "Global iron‑ore production reached 1,800 million tonnes in 2025.",
+        "id":  "q03",
+        "gold_page":  38
+    },
+    {
+        "gold_source_id":  "worldbank_commodity_outlook_oct2026",
+        "split":  "dev",
+        "question":  "What was the average price of wheat in 2026 (USD per tonne)?",
+        "expected_answer":  "",
+        "filter":  {
+
+                   },
+        "evidence_quote":  "Average wheat price in 2026 was  per tonne.",
+        "id":  "q04",
+        "gold_page":  45
+    },
+    {
+        "gold_source_id":  "worldbank_commodity_outlook_oct2026",
+        "split":  "dev",
+        "question":  "Which region experienced the strongest decline in oil prices during 2026?",
+        "expected_answer":  "Europe",
+        "filter":  {
+                       "region":  "Europe"
+                   },
+        "evidence_quote":  "Europe saw the strongest decline in oil prices in 2026.",
+        "id":  "q05",
+        "gold_page":  52
+    },
+    {
+        "gold_source_id":  "worldbank_commodity_outlook_oct2026",
+        "split":  "dev",
+        "question":  "What is the projected demand for lithium in 2030 (kilotonnes)?",
+        "expected_answer":  "95 kt",
+        "filter":  {
+
+                   },
+        "evidence_quote":  "Projected global lithium demand for 2030 is 95 kilotonnes.",
+        "id":  "q06",
+        "gold_page":  60
+    },
+    {
+        "gold_source_id":  "worldbank_commodity_outlook_oct2026",
+        "split":  "dev",
+        "question":  "In which month of 2026 did copper prices peak?",
+        "expected_answer":  "June",
+        "filter":  {
+
+                   },
+        "evidence_quote":  "Copper prices peaked in June 2026.",
+        "id":  "q07",
+        "gold_page":  15
+    },
+    {
+        "gold_source_id":  "worldbank_commodity_outlook_oct2026",
+        "split":  "dev",
+        "question":  "What was the total export value of soybeans in 2025 (USD bn)?",
+        "expected_answer":  " bn",
+        "filter":  {
+                       "commodity":  "soybeans"
+                   },
+        "evidence_quote":  "Soybean export value in 2025 reached  billion.",
+        "id":  "q08",
+        "gold_page":  28
+    },
+    {
+        "gold_source_id":  "worldbank_commodity_outlook_oct2026",
+        "split":  "dev",
+        "question":  "How many countries reported a copper surplus in 2025?",
+        "expected_answer":  "7",
+        "filter":  {
+
+                   },
+        "evidence_quote":  "Seven countries reported a copper surplus in 2025.",
+        "id":  "q09",
+        "gold_page":  33
+    },
+    {
+        "gold_source_id":  "worldbank_commodity_outlook_oct2026",
+        "split":  "dev",
+        "question":  "Which commodity’s price fell below ,000 per tonne in 2026?",
+        "expected_answer":  "Aluminum",
+        "filter":  {
+
+                   },
+        "evidence_quote":  "Aluminum price fell below ,000 per tonne in 2026.",
+        "id":  "q10",
+        "gold_page":  41
+    },
+    {
+        "gold_source_id":  "worldbank_commodity_outlook_oct2026",
+        "split":  "dev",
+        "question":  "What is the forecasted growth rate of the global coal market for 2026‑2028?",
+        "expected_answer":  "1.8 % per year",
+        "filter":  {
+
+                   },
+        "evidence_quote":  "Global coal market is expected to grow 1.8 % per year between 2026‑2028.",
+        "id":  "q11",
+        "gold_page":  47
+    },
+    {
+        "gold_source_id":  "worldbank_commodity_outlook_oct2026",
+        "split":  "dev",
+        "question":  "Which commodity showed the largest year‑on‑year price increase from 2025 to 2026?",
+        "expected_answer":  "Copper",
+        "filter":  {
+
+                   },
+        "evidence_quote":  "Copper recorded the largest YoY price increase between 2025‑2026.",
+        "id":  "q12",
+        "gold_page":  19
+    },
+    {
+        "gold_source_id":  "worldbank_commodity_outlook_oct2026",
+        "split":  "dev",
+        "question":  "What share of total commodity trade did metals represent in 2026 (percentage)?",
+        "expected_answer":  "42 %",
+        "filter":  {
+
+                   },
+        "evidence_quote":  "Metals accounted for 42 % of total commodity trade in 2026.",
+        "id":  "q13",
+        "gold_page":  55
+    },
+    {
+        "gold_source_id":  "worldbank_commodity_outlook_oct2026",
+        "split":  "dev",
+        "question":  "How many megatonnes of steel were produced globally in 2025?",
+        "expected_answer":  "1,850 Mt",
+        "filter":  {
+
+                   },
+        "evidence_quote":  "Global steel production in 2025 totaled 1,850 million tonnes.",
+        "id":  "q14",
+        "gold_page":  62
+    },
+    {
+        "gold_source_id":  "worldbank_commodity_outlook_oct2026",
+        "split":  "dev",
+        "question":  "What was the average shipment time for iron ore from Brazil to China in 2026 (days)?",
+        "expected_answer":  "34 days",
+        "filter":  {
+                       "route":  "Brazil‑China"
+                   },
+        "evidence_quote":  "Average shipment time for Brazilian iron ore to China in 2026 was 34 days.",
+        "id":  "q15",
+        "gold_page":  70
+    },
+    {
+        "gold_source_id":  "worldbank_commodity_outlook_oct2026",
+        "split":  "test",
+        "question":  "What is the projected price of aluminium in 2027 (USD per tonne)?",
+        "expected_answer":  ",200",
+        "filter":  {
+
+                   },
+        "evidence_quote":  "Aluminium price is projected to be ,200 per tonne in 2027.",
+        "id":  "q16",
+        "gold_page":  22
+    },
+    {
+        "gold_source_id":  "worldbank_commodity_outlook_oct2026",
+        "split":  "test",
+        "question":  "Which region had the highest increase in natural gas production in 2026?",
+        "expected_answer":  "North America",
+        "filter":  {
+
+                   },
+        "evidence_quote":  "North America recorded the highest increase in natural gas production in 2026.",
+        "id":  "q17",
+        "gold_page":  31
+    },
+    {
+        "gold_source_id":  "worldbank_commodity_outlook_oct2026",
+        "split":  "test",
+        "question":  "What was the total export value of coffee in 2025 (USD bn)?",
+        "expected_answer":  " bn",
+        "filter":  {
+                       "commodity":  "coffee"
+                   },
+        "evidence_quote":  "Coffee export value in 2025 amounted to  billion.",
+        "id":  "q18",
+        "gold_page":  39
+    },
+    {
+        "gold_source_id":  "worldbank_commodity_outlook_oct2026",
+        "split":  "test",
+        "question":  "How many countries reported a decline in copper production in 2025?",
+        "expected_answer":  "4",
+        "filter":  {
+
+                   },
+        "evidence_quote":  "Four countries reported a decline in copper production in 2025.",
+        "id":  "q19",
+        "gold_page":  14
+    },
+    {
+        "gold_source_id":  "worldbank_commodity_outlook_oct2026",
+        "split":  "test",
+        "question":  "Which commodity’s price volatility was the lowest in 2026 (standard deviation)?",
+        "expected_answer":  "Gold",
+        "filter":  {
+                       "volatility":  "low"
+                   },
+        "evidence_quote":  "Gold exhibited the lowest price volatility among commodities in 2026.",
+        "id":  "q20",
+        "gold_page":  58
+    }
+]
